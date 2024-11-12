@@ -1,3 +1,5 @@
+
+
 header {
     display: flex;
     align-items: center;
@@ -5,13 +7,14 @@ header {
     color: #ffffff;
     background-color: #29465b;
     justify-content: center;
-    font-family: "calibri";
+    font-family: "Roboto", sans-serif;
     padding: 20px;
 }
 
 header h2 {
     color: gold;
     margin: 10px;
+    
 }
 
 /* Navigation section */
@@ -21,6 +24,7 @@ nav {
     background-color: #333;
     justify-content: center;
     padding: 0,5px;   
+    font-family: "Roboto", sans-serif;
 }
 
 nav li {
@@ -42,6 +46,7 @@ main {
     gap: 20px;                    
     justify-content: center;
     margin: 20px;
+    font-family: "Roboto", sans-serif;
 }
 
 /* Section layout within main */
@@ -91,6 +96,7 @@ main aside {
     background-color: #f4f4f4;
     border-radius: 8px;
     border: 1px solid #333;
+        font-family: "Roboto", sans-serif;
     
 }
 
@@ -120,6 +126,7 @@ main aside a {
     border: 1px solid black;
     margin-left: 10px;
     border-radius: 8px;
+    
 }
 
 .country img{
