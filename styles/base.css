@@ -1,20 +1,15 @@
 
-
 header {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #ffffff;
     background-color: #29465b;
-    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
     font-family: "Roboto", sans-serif;
-    padding: 20px;
 }
 
-header h2 {
+header p {
     color: gold;
     margin: 10px;
-    
 }
 
 /* Navigation section */
@@ -25,12 +20,16 @@ nav {
     justify-content: center;
     padding: 0,5px;   
     font-family: "Roboto", sans-serif;
+    
 }
 
 nav li {
     display: inline-block;
-    margin-right: 120px;
-           
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 a {
@@ -131,6 +130,7 @@ main aside a {
 
 .country img{
     grid-column: 1;
+    width: 200px;
 }
 
 .country p{
