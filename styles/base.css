@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 header {
     background-color: #29465b;
@@ -18,7 +23,7 @@ nav {
     display: flex;
     background-color: #333;
     justify-content: center;
-    padding: 0,5px;   
+    padding: 1px;   
     font-family: "Roboto", sans-serif;
     
 }
@@ -28,8 +33,6 @@ nav li {
     justify-content: center;
     align-items: center;
     margin: 10px;
-    margin-left: 80px;
-    margin-right: 80px;
 }
 
 a {
@@ -51,7 +54,7 @@ main {
 /* Section layout within main */
 main section {
     display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;  
+    grid-template-columns: 1fr 1fr;  
     grid-template-rows: 1fr;
     margin: 10px;
     padding: 20px;
@@ -61,7 +64,7 @@ main section {
     margin-left: 10px;
 }
 
-main section h1 {
+main section h2 {
     text-align: center;
     color: #f4f4f4;
     background-color: #29465b;
@@ -73,18 +76,18 @@ main section h1 {
 }
 
 /* Section text styling */
-main section p {
-    margin-bottom: 20px;          
+main section p {       
     color: #333;
     grid-row: 2;
+    margin-left: 10px;
 }
 
 /* Image within the section "About me" */
 main section img {
     grid-row: 2;
-    grid-column: 3;
+    grid-column: 2;
     max-width: 200px;
-    margin-left: 20px;
+    margin-left: 100px;
     border-radius: 8px;
 }
 
@@ -95,11 +98,12 @@ main aside {
     background-color: #f4f4f4;
     border-radius: 8px;
     border: 1px solid #333;
-        font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
+    align-items: center;
     
 }
 
-main aside h1 {
+main aside h2 {
     border-radius: 8px;
     padding: 10px;
     text-align: center;
@@ -112,12 +116,16 @@ main aside h1 {
 main aside a {
     color: #333;
     margin-top: 10px;
-    display: block;
+    display: flex;
+    text-align: center;
 }
 
+main aside li{
+    margin-left: 30px;
+}
 .country{
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     text-align: center;
     width: 900px;
@@ -125,6 +133,7 @@ main aside a {
     border: 1px solid black;
     margin-left: 10px;
     border-radius: 8px;
+    background-color: #f4f4f4;
     
 }
 
@@ -144,7 +153,21 @@ footer {
     text-align: center;
     background-color: #29465b;
     color: #f4f4f4;
-    border-radius: 8px;
-
     padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+nav ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: font-size 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    font-size: 20px; 
+    transform: scale(1.1); 
+    cursor: pointer;
 }
