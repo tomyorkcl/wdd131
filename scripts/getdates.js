@@ -1,13 +1,14 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const nav = document.querySelector('nav');
+const currentYear = new Date().getFullYear();
 
+const lastModifiedDate = document.lastModified;
 
-    nav.addEventListener('mouseover', function() {
-        document.body.style.cursor = 'pointer';
-    });
+const copyrightParagraph = document. querySelector('footer p:first-of-type');
+if (copyrightParagraph) {
+    copyrightParagraph.innerHTML = '©${currentYear} 🗿 Tomas Contreras 🗿 Chile';
+}
 
-    
-    nav.addEventListener('mouseout', function() {
-        document.body.style.cursor = 'default';
-    });
-});
+const modifiedParagraph = document.querySelector('footer p:last-of-type');
+if (modifiedParagraph) {
+    modifiedParagraph.innerHTML = 'Last modification: ${lastModifiedDate}';
+
+}
