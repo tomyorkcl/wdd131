@@ -1,6 +1,6 @@
 header {
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 1fr 1fr;
     background-color: rgb(44, 3, 78);
     align-items: center;
     font-family: "Roboto";
@@ -14,6 +14,14 @@ header h1 {
     color: aliceblue;
     justify-content: left;
     text-align: center;
+    
+}
+
+body h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto";
 }
 
 nav {
@@ -48,24 +56,23 @@ nav a {
     text-decoration: none;
 }
 
-body h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .images{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px;
-
 }
 
 .images img {
     width: 100%;
     height: auto;
     object-fit: cover;
-}           
+}
+
+figcaption{
+    text-align: center;
+    align-items: center;
+    
+}
 
 footer {
     font-family: "Roboto";
