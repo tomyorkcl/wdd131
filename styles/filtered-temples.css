@@ -1,0 +1,114 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(44, 3, 78);
+    align-items: center;
+    font-family: "Roboto";
+}
+
+header h1 {
+    display: flex;
+    grid-column: 1;
+    padding: 20px;
+    font-size: 30px;
+    color: aliceblue;
+    justify-content: left;
+    text-align: center;
+    
+}
+
+body h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto";
+}
+
+nav {
+    display: flex;
+    grid-column: 2;
+    padding: 10px;
+    text-align: center;
+    justify-content: right;
+}
+
+nav li {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 20px;
+
+}
+nav li a:hover{
+    color: rgb(77, 11, 131);
+    
+}
+nav li a{
+    color: aliceblue;
+}
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+figcaption{
+    text-align: center;
+    align-items: center;
+    
+}
+
+footer {
+    font-family: "Roboto";
+    text-align: center;
+    background-color: rgb(44, 3, 78);
+    color: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.hamburger {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none; 
+}
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+}
+
+ul.menu li {
+    margin: 0 15px;
+}
+
+ul.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+header nav ul li a:hover{
+    color: black;
+}

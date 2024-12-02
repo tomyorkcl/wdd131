@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Images</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+<body>
+
+    <header>
+        <h1>Lazy Load Images</h1>
+    </header>
+
+    <main>
+        <img src="images/cat.webp" width="400x600px" data-src="https://via.placeholder.com/400x600/ff0000/ffffff?text=Image+1" alt="Image 1" loading="lazy">
+        <img src="images/cat2.jpg" width="400x600px" data-src="https://via.placeholder.com/400x600/00ff00/ffffff?text=Image+2" alt="Image 2" loading="lazy">
+        <img src="images/cat3.jpg" width="400x600px" data-src="https://via.placeholder.com/400x600/0000ff/ffffff?text=Image+3" alt="Image 3" loading="lazy">
+        <img src="images/cat4.jpg" width="400x600px" data-src="https://via.placeholder.com/400x600/ffff00/ffffff?text=Image+4" alt="Image 4" loading="lazy">
+        <img src="images/cat5.jpg" width="400x600px" data-src="https://via.placeholder.com/400x600/ff00ff/ffffff?text=Image+5" alt="Image 5" loading="lazy">
+        <img src="images/fox.webp" width="400x600px" data-src="https://via.placeholder.com/400x600/00ffff/ffffff?text=Image+6" alt="Image 6" loading="lazy">
+    </main>
+
+    <footer>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/lazyload.js" defer></script>
+</body>
+</html>
