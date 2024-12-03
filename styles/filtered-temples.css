@@ -1,9 +1,18 @@
+/* Estilos generales */
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: rgb(44, 3, 78);
     align-items: center;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
 }
 
 header h1 {
@@ -14,16 +23,16 @@ header h1 {
     color: aliceblue;
     justify-content: left;
     text-align: center;
-    
 }
 
 body h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
 }
 
+/* Estilos para el menú de navegación */
 nav {
     display: flex;
     grid-column: 2;
@@ -32,31 +41,28 @@ nav {
     justify-content: right;
 }
 
-nav li {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    font-size: 20px;
-
-}
-nav li a:hover{
-    color: rgb(77, 11, 131);
-    
-}
-nav li a{
-    color: aliceblue;
-}
 nav ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-nav a {
+nav li {
+    display: inline-block;
+    margin: 20px;
+    font-size: 20px;
+}
+
+nav li a {
+    color: aliceblue;
     text-decoration: none;
 }
 
-.images{
+nav li a:hover {
+    color: rgb(77, 11, 131);
+}
+
+/* Estilos para el contenedor de imágenes */
+.images {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -68,14 +74,50 @@ nav a {
     object-fit: cover;
 }
 
-figcaption{
-    text-align: center;
-    align-items: center;
-    
+/* Estilos para las tarjetas de templos */
+.temple-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
 }
 
+.temple-card {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+figcaption {
+    text-align: center;
+    padding: 15px;
+}
+
+figcaption h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+figcaption p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Estilos para el pie de página */
 footer {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     text-align: center;
     background-color: rgb(44, 3, 78);
     color: #f4f4f4;
@@ -83,19 +125,21 @@ footer {
     margin-top: 20px;
 }
 
+/* Estilos para la hamburguesa (menú móvil) */
 .hamburger {
     font-size: 30px;
     color: white;
     cursor: pointer;
-    display: none; 
+    display: none;
 }
 
+/* Estilos para el menú en pantalla grande */
 ul.menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 
 ul.menu li {
@@ -109,6 +153,6 @@ ul.menu li a {
     display: block;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
     color: black;
 }

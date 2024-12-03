@@ -11,8 +11,6 @@ hamburger.addEventListener("click", () => {
     menu.classList.toggle("active"); 
 });
 
-
-
 const temples = [
 
     {
@@ -91,6 +89,37 @@ const temples = [
       area: 116642,
       imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
-    },
-    // Add more temple objects here...
-  ];
+    }
+];
+
+function generateTempleCards(temples) {
+    const templeCardsContainer = document.getElementById('temple-cards');
+    templeCardsContainer.innerHTML = ''; // Limpiar el contenedor de tarjetas
+    
+    temples.forEach(temple => {
+      const templeCard = document.createElement('figure');
+      templeCard.classList.add('temple-card');
+      
+      templeCard.innerHTML = `
+        <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy" />
+        <figcaption>
+          <h3>${temple.templeName}</h3>
+          <p><strong>Location:</strong> ${temple.location}</p>
+          <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+          <p><strong>Area:</strong> ${temple.area} sq ft</p>
+        </figcaption>
+      `;
+      
+      templeCardsContainer.appendChild(templeCard);
+    });
+  }
+  
+  // Llamar la función para generar todas las tarjetas inicialmente
+  generateTempleCards(temples);
+  
+  // Funciones para filtrar las tarjetas basadas en el menú
+  document.getElementById('home-link').addEventListener('click', () => generateTempleCards(temples));
+  document.getElementById('old-link').addEventListener('click', () => generateTempleCards(temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900)));
+  document.getElementById('new-link').addEventListener('click', () => generateTempleCards(temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000)));
+  document.getElementById('large-link').addEventListener('click', () => generateTempleCards(temples.filter(temple => temple.area > 90000)));
+  document.getElementById('small-link').addEventListener('click', () => generateTempleCards(temples.filter(temple => temple.area < 10000)));
