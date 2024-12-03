@@ -94,7 +94,7 @@ const temples = [
 
 function generateTempleCards(temples) {
     const templeCardsContainer = document.getElementById('temple-cards');
-    templeCardsContainer.innerHTML = ''; // Limpiar el contenedor de tarjetas
+    templeCardsContainer.innerHTML = '';
     
     temples.forEach(temple => {
       const templeCard = document.createElement('figure');
@@ -114,10 +114,10 @@ function generateTempleCards(temples) {
     });
   }
   
-  // Llamar la función para generar todas las tarjetas inicialmente
+
   generateTempleCards(temples);
   
-  // Funciones para filtrar las tarjetas basadas en el menú
+
   document.getElementById('home-link').addEventListener('click', () => generateTempleCards(temples));
   document.getElementById('old-link').addEventListener('click', () => generateTempleCards(temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900)));
   document.getElementById('new-link').addEventListener('click', () => generateTempleCards(temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000)));
