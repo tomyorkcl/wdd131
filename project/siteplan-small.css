@@ -15,7 +15,7 @@
     .navigation {
       padding: 20px;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
     }
   
@@ -40,23 +40,6 @@
       width: 250px; /* Adjust product width for smaller screens */
       margin-right: 10px;
     }
-
-    .box {
-
-        background-color: var(--primary-color); 
-        box-shadow: var(--secondary-color); 
-        text-align: center;
-
-      }
-      
-      .box-us {
-        border-radius: 8px;
-        border-color: var(--secondary-color);
-        background-color: var(--primary-color);
-        box-shadow: var(--secondary-color); 
-        text-align: center;
-        padding: 5px;
-      }
   
     .product img {
       height: 150px;
@@ -77,79 +60,3 @@
   }
 
   
-  @media (max-width: 760px) {
-    .box, .box-us {
-      margin: auto;
-      height: auto; /* Let the box adjust its height on smaller screens */
-      text-align: center;
-    }
-  
-    .about p {
-      margin-left: 50px;
-      margin-right: 50px;
-      height: auto;
-    }
-  
-    .navigation {
-      padding: 5px;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-    }
-  
-    .nav-links {
-      list-style: none;
-      flex-direction: row;
-      gap: 10px;
-    }
-  
-    .nav-links a {
-      text-decoration: none;
-      font-size: 16px;
-      padding: 6px;
-    }
-  
-    .carousel-container {
-      overflow-x: auto;
-      white-space: nowrap;
-    }
-  
-    .product {
-      width: 250px; /* Adjust product width for smaller screens */
-      margin-right: 10px;
-    }
-
-    .box {
-
-        background-color: var(--primary-color); 
-        box-shadow: var(--secondary-color); 
-        text-align: center;
-
-      }
-      
-      .box-us {
-        border-radius: 8px;
-        border-color: var(--secondary-color);
-        background-color: var(--primary-color);
-        box-shadow: var(--secondary-color); 
-        text-align: center;
-        padding: 5px;
-      }
-  
-    .product img {
-      height: 150px;
-    }
-  
-    footer {
-      padding: 40px;
-    }
-  
-    header {
-      flex-direction: row;
-      padding: 15px;
-    }
-  
-    .logo img {
-      max-height: 60px;
-    }
-  }
