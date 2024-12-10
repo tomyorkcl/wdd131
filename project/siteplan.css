@@ -172,7 +172,7 @@ footer {
 
   box-sizing: border-box;  
   border-radius: 8px;        
-  box-shadow: var(--secondary-color); 
+  box-shadow: var(--neutral-color); 
   padding: 10px;
   height: auto;
   width: 150px;
