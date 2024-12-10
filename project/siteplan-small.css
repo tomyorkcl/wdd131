@@ -38,6 +38,23 @@
       width: 250px; /* Adjust product width for smaller screens */
       margin-right: 10px;
     }
+
+    .box {
+
+        background-color: var(--primary-color); 
+        box-shadow: var(--secondary-color); 
+        text-align: center;
+
+      }
+      
+      .box-us {
+        border-radius: 8px;
+        border-color: var(--secondary-color);
+        background-color: var(--primary-color);
+        box-shadow: var(--secondary-color); 
+        text-align: center;
+        padding: 5px;
+      }
   
     .product img {
       height: 150px;
