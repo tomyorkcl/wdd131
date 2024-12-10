@@ -3,6 +3,7 @@
     .box, .box-us {
       margin: auto;
       height: auto; /* Let the box adjust its height on smaller screens */
+      text-align: center;
     }
   
     .about p {
