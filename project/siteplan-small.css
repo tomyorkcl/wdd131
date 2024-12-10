@@ -85,8 +85,8 @@
     }
   
     .about p {
-      margin-left: 100px;
-      margin-right: 100px;
+      margin-left: 50px;
+      margin-right: 50px;
       height: auto;
     }
   
@@ -100,13 +100,13 @@
     .nav-links {
       list-style: none;
       flex-direction: row;
-      gap: 15px;
+      gap: 10px;
     }
   
     .nav-links a {
       text-decoration: none;
       font-size: 14px;
-      padding: 8px;
+      padding: 4px;
     }
   
     .carousel-container {
