@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
+:root {
+    --primary-color: #013a58;
+    --secondary-color: #c1121f;
+    --tertiary-color: white;
+}
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -62,6 +67,10 @@ main {
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+h2::after {
+    content: " ★";
+    color: gold;
+}
 
 .data-container {
     background-color: #003049;
