@@ -10,7 +10,7 @@ menuToggle.addEventListener('click', () => {
 /*carousel*/
 
 let currentIndex = 0;
-const totalProducts = 9;  // Número total de productos
+const totalProducts = 9;  // Total products
 
 function moveCarousel(direction) {
   const carousel = document.querySelector('.carousel');

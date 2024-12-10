@@ -56,7 +56,7 @@
     }
   }
 
-    /* Estilo del menú hamburguesa */
+    /* style menu hamburguer */
     .menu-toggle {
         display: flex;
         flex-direction: column;
