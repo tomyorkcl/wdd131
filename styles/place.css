@@ -4,6 +4,8 @@
     --primary-color: #013a58;
     --secondary-color: #c1121f;
     --tertiary-color: white;
+    
+    --font-family: 'Roboto', sans-serif;
 }
 
 * {
