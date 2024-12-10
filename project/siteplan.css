@@ -100,13 +100,13 @@
 }
 
 .menu-toggle {
-  display: none; /* Ocultar para diseño de escritorio */
+  display: none; 
 }
 
 header {
   display: flex;
   justify-content: space-between; 
-  align-items: center; /* Centrar verticalmente */
+  align-items: center; 
   padding: 10 20px;
   background-color: var(--secondary-color); 
 }
