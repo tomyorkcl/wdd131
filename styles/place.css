@@ -26,7 +26,7 @@ header{
     border-bottom: 30px solid var(--secondary-color); 
 }
 
-main {
+.hero-image {
     background-image: url('/images/chile.webp'); 
     background-size: cover; 
     background-repeat: no-repeat; 
