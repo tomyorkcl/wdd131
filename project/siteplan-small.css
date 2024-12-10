@@ -91,9 +91,9 @@
     }
   
     .navigation {
-      padding: 1px;
+      padding: 5px;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
     }
   
@@ -105,8 +105,8 @@
   
     .nav-links a {
       text-decoration: none;
-      font-size: 14px;
-      padding: 4px;
+      font-size: 16px;
+      padding: 6px;
     }
   
     .carousel-container {
