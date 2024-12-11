@@ -27,7 +27,7 @@ header{
 }
 
 .hero-image {
-    background-image: url('/images/chile.webp'); 
+    background-image: url('../images/chile.webp'); 
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 
