@@ -18,7 +18,7 @@
   width: auto; 
   height: 650px; 
   background-color: var(--primary-color); 
-  box-shadow: black; 
+  box-shadow: 10px 5px 5px black; 
   margin: 50px;
 }
 
@@ -29,7 +29,7 @@
   width: auto; 
   height: 400px; 
   background-color: var(--primary-color);
-  box-shadow: black; 
+  box-shadow: 10px 5px 5px black; 
   text-align: center;
   padding: 5px;
 }
@@ -148,7 +148,7 @@ footer {
   background-color: var(--tertiary-color); 
   border: white;    
   border-radius: 8px;
-  box-shadow: black; 
+  box-shadow: 10px 5px 5px black; 
 }
 
 .product h3{
@@ -195,7 +195,7 @@ button {
   cursor: pointer;
   z-index: 1;
   border-radius: 8px;
-  box-shadow: black; 
+  box-shadow: 10px 5px 5px black; 
 }
   
 .prev {
