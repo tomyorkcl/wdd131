@@ -18,7 +18,7 @@
   width: auto; 
   height: 650px; 
   background-color: var(--primary-color); 
-  box-shadow: var(--secondary-color); 
+  box-shadow: black; 
   margin: 50px;
 }
 
@@ -29,7 +29,7 @@
   width: auto; 
   height: 400px; 
   background-color: var(--primary-color);
-  box-shadow: var(--secondary-color); 
+  box-shadow: black; 
   text-align: center;
   padding: 5px;
 }
@@ -107,7 +107,6 @@ header {
   display: flex;
   justify-content: space-between; 
   align-items: center; 
-  padding: 10 20px;
   background-color: var(--secondary-color); 
 }
 
@@ -140,7 +139,6 @@ footer {
   
 .product {
 
-
   text-align: center;
   margin-right: 5px;
   width: 430px;
@@ -148,9 +146,9 @@ footer {
 
   box-sizing: border-box; 
   background-color: var(--tertiary-color); 
-  border: var(--tertiary-color);    
+  border: white;    
   border-radius: 8px;
-  box-shadow: var(--secondary-color); 
+  box-shadow: black; 
 }
 
 .product h3{
@@ -172,7 +170,7 @@ footer {
 
   box-sizing: border-box;  
   border-radius: 8px;        
-  box-shadow: var(--neutral-color); 
+  box-shadow: black; 
   padding: 10px;
   height: auto;
   width: 150px;
@@ -197,7 +195,7 @@ button {
   cursor: pointer;
   z-index: 1;
   border-radius: 8px;
-  box-shadow: var(--secondary-color); 
+  box-shadow: black; 
 }
   
 .prev {
