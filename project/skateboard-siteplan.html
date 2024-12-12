@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junji Skateboards</title>
+    <meta name="author" content="Tomas Contreras">
+    <meta name="description" content="Discover the best skateboards, decks, wheels, and accessories at Junji Skateboards.">
+
+    <link rel="stylesheet" href="siteplan.css">
+    <link rel="stylesheet" href="siteplan-small.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="images/logo-skateboard.png" alt="Logo Junji Skateboarding" width="100px">
+  </div>
+
+  <nav class="navigation">
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Skateboards</a></li>
+      <li><a href="#">Accessories</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="highlight">
+    <h2>TOP SKATEBOARDS</h2>
+    <div class="carousel-container">
+      <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+      <div class="carousel">
+        <div class="product">
+          <h3>Santa Cruz Pro Deck</h3>
+          <img src="images/santa-cruz-deck.png" alt="Santa Cruz Pro Deck" class="product-image">
+          <p>$109.99</p>
+          <a href="#" class="btn">Buy</a>
+        </div>
+
+        <div class="product">
+          <h3>Element Skateboard</h3>
+          <img src="images/element-skateboard.png" alt="Element Skateboard" class="product-image">
+          <p>$129.99</p>
+          <a href="#" class="btn">Buy</a>
+        </div>
+
+        <div class="product">
+          <h3>Zero Deck</h3>
+          <img src="images/zero-deck.png" alt="Zero Deck" class="product-image">
+          <p>$99.99</p>
+          <a href="#" class="btn">Buy</a>
+        </div>
+        
+        <!-- Agregar más productos aquí -->
+      </div>
+      <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+    </div>
+  </div>
+
+  <div class="about">
+    <h2>JUNJI SKATEBOARDS</h2>
+    <p>Welcome to Junji Skateboarding, your one-stop shop for top-quality skateboards. Whether you're a seasoned pro or just starting out, we have the perfect deck, trucks, wheels, and accessories for you. Browse our selection of top brands like Santa Cruz, Element, and Zero, and elevate your skateboarding experience. At Junji Skateboarding, we combine style, performance, and durability to provide you with the best products for any skater.</p>
+  </div>
+</main>
+
+<footer>
+  <h3>©2024 🗿 Tomas Contreras 🗿 Chile</h3>
+  <p>Last modification: <span id="last-modified"></span></p>
+  <script src="siteplan.js" defer></script>
+</footer>
+</body>
+</html>
