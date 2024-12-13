@@ -3,16 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Review Form</title>
+    <meta name="author" content="Tomas Contreras" />
+    <meta name="description" content="form to give a feedback from a product" />
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer src="scripts/form.js"></script>
+
 </head>
 <body>
-<header>
-    <h1>Product Review</h1>
-</header>
+    <header>
+        <h1>Product Review</h1>
+    </header>
 
-<legend>Product Name</legend>
-<select></select>
+    <main>
+        <form action="review.html" method="get">
+            <!-- Product Name -->
+            <div>
+                <label for="product-name">Product Name</label>
+                <select id="product-name" name="product-name" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                    <!-- Options populated dynamically via JavaScript -->
+                </select>
+            </div>
 
+            <!-- Overall Rating -->
+            <div>
+                <fieldset>
+                    <legend>Overall Rating</legend>
+                    <div class="radio-group">
+                    <label><input type="radio" name="rating" value="1" required> ☆</label>
+                    <label><input type="radio" name="rating" value="2"> ☆☆</label>
+                    <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
+                    <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
+                    <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <!-- Date of Installation -->
+            <div>
+                <label for="installation-date">Date of Installation</label>
+                <input type="date" id="installation-date" name="installation-date" required>
+            </div>
+
+            <!-- Useful Features -->
+            <div>
+                <fieldset>
+                    <div class="checkbox-group">
+
+                    <legend>Which features did you find useful in the product?</legend>
+
+                    <label><input type="checkbox" id="durability" name="durability" value="durability">Durability</label>
+                    <label><input type="checkbox" id="use" name="use" value="use">Ease of Use</label>
+                    <label><input type="checkbox" id="performance" name="performance" value="performance">Performance</label>
+                    <label><input type="checkbox" id="design" name="design" value="design">Design</label>
+
+                    </div>
+                </fieldset>
+            </div>
+
+            <!-- Written Review -->
+            <div>
+                <label for="written-review">Written Review</label>
+                <textarea id="written-review" name="written-review" rows="5" cols="40" placeholder="Write your review here..."></textarea>
+            </div>
+
+            <!-- User Name -->
+            <div>
+                <label for="user-name">User Name</label>
+                <input type="text" id="user-name" name="user-name" placeholder="Enter your name">
+            </div>
+
+            <!-- Submit Button -->
+            <div class="button">
+                <input type="submit" value="Submit Review">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+
+        <h3>©2024 🗿 Tomas Contreras 🗿 Chile</h3>
+        <p>Last modification: <span id="last-modified"></span></p>
+      
+      
+    <script src="scripts/form.js" defer></script>
+      
+    </footer>
 
 </body>
 </html>
