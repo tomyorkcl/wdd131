@@ -113,7 +113,7 @@ footer {
     }
 
     main {
-        max-width: 95%;
+        max-width: 90%;
         margin: 1rem;
     }
 
@@ -136,26 +136,10 @@ footer {
     }
 }
 
-@media (max-width: 375px) {
-    header {
-        padding: 0.5rem;
-    }
+.radio-group {
+    width: 90%;
+}
 
-    main {
-        padding: 0.75rem;
-    }
-
-    form {
-        gap: 0.75rem; /* Smaller gap between form elements */
-    }
-
-    input, select, textarea {
-        font-size: 0.875rem; /* Adjust font size further */
-        padding: 0.5rem;
-    }
-
-    input[type="submit"] {
-        font-size: 0.9rem;
-        padding: 0.65rem;
-    }
+.checkbox-group {
+    width: 90%;
 }
