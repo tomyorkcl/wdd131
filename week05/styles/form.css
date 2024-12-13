@@ -145,6 +145,10 @@ footer {
 
     .checkbox-group {
         width: 90%;
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 10px; 
     }
 
     .date {
