@@ -23,7 +23,7 @@
     }
 
     input, select, textarea {
-        width: 90%; /* Full width for inputs on mobile */
+        width: 80%; /* Full width for inputs on mobile */
         padding: 0.75rem;
         font-size: 0.9rem;
         margin: 10px;
