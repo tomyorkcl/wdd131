@@ -1,22 +1,32 @@
-/* Media Queries for Smartphones */
+/* Media Query for Mobile Devices (smartphones) */
 @media (max-width: 680px) {
+    body {
+        font-size: 14px; 
+    }
+
     header {
         padding: 0.75rem;
     }
 
     main {
-        max-width: 90%;
+        max-width: 100%;
         margin: 1rem;
+        padding: 1rem;
     }
 
     form {
         gap: 1rem;
     }
 
+    label {
+        font-size: 0.9rem;
+    }
+
     input, select, textarea {
-        font-size: 0.9rem; /* Slightly smaller font size */
-        padding: 0.45rem;
-        width: 90%;
+        width: 95%; /* Full width for inputs on mobile */
+        padding: 0.75rem;
+        font-size: 0.9rem;
+        margin: 10px;
     }
 
     input[type="submit"] {
@@ -25,27 +35,35 @@
     }
 
     footer {
-        font-size: 0.75rem; /* Smaller footer font */
+        font-size: 0.75rem;
     }
 
     .radio-group {
-        width: 90%;
+        width: 100%;
         display: flex;
-        flex-direction: column; 
+        flex-wrap: column;
+        gap: 10px;
         align-items: flex-start;
-        gap: 10px; 
     }
 
     .checkbox-group {
-        width: 90%;
+        width: 100%;
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         align-items: flex-start;
-        gap: 10px; 
+        gap: 10px;
     }
 
-    .date {
-        width: 90%;
+    .checkbox-group label {
+        font-size: 0.9rem; /* Adjust font size for checkbox labels */
+        white-space: normal; /* Allow text to wrap */
+        display: flex;
+        align-items: center; /* Align checkbox and text properly */
+        gap: 5px; /* Space between checkbox and label text */
     }
 
+    .button {
+        display: flex;
+        justify-content: center;
+    }
 }
