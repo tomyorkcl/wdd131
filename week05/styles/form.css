@@ -134,16 +134,21 @@ footer {
     footer {
         font-size: 0.75rem; /* Smaller footer font */
     }
-}
 
-.radio-group {
-    width: 90%;
-    display: flex;
-    flex-direction: column; 
-    align-items: flex-start;
-    gap: 10px; 
-}
+    .radio-group {
+        width: 90%;
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 10px; 
+    }
 
-.checkbox-group {
-    width: 90%;
+    .checkbox-group {
+        width: 90%;
+    }
+
+    .date {
+        width: 100px;
+        height: auto;
+    }
 }
