@@ -58,7 +58,7 @@
         font-size: 0.9rem; 
         white-space: normal;
         display: flex;
-        align-items: center; /* Align checkbox and text properly */
+        align-items: center;
         gap: 0px; /* Space between checkbox and label text */
     }
 
