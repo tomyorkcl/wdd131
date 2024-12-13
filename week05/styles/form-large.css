@@ -5,7 +5,7 @@
     }
 
     main {
-        max-width: 80%;
+        max-width: 90%;
         margin: 1rem;
     }
 
@@ -15,7 +15,8 @@
 
     input, select, textarea {
         font-size: 0.9rem; /* Slightly smaller font size */
-        padding: 0.65rem;
+        padding: 0.45rem;
+        width: 80%;
     }
 
     input[type="submit"] {
@@ -44,7 +45,8 @@
     }
 
     .date {
-        width: 400px;
+        width: 250px;
         height: auto;
     }
+
 }
