@@ -55,11 +55,11 @@
     }
 
     .checkbox-group label {
-        font-size: 0.9rem; /* Adjust font size for checkbox labels */
-        white-space: normal; /* Allow text to wrap */
+        font-size: 0.9rem; 
+        white-space: normal;
         display: flex;
         align-items: center; /* Align checkbox and text properly */
-        gap: 5px; /* Space between checkbox and label text */
+        gap: 0px; /* Space between checkbox and label text */
     }
 
     .button {
