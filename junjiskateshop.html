@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkateShop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Welcome to SkateShop</h1>
+        <p>Your one-stop shop for all skateboarding needs!</p>
+    </header>
+
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+        <h2>Featured Products</h2>
+        <div class="carousel">
+            <button class="carousel-btn prev-btn">&#8249;</button>
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <!-- Repeat for 12 products -->
+                    <li class="carousel-item">
+                        <img src="images/skate1.jpg" alt="Skateboard 1">
+                        <h3>Skateboard Pro 1</h3>
+                        <button class="buy-btn">Buy Now</button>
+                    </li>
+                    <!-- Add more items (total 12) -->
+                </ul>
+            </div>
+            <button class="carousel-btn next-btn">&#8250;</button>
+        </div>
+    </section>
+
+    <!-- Static Products Section -->
+    <section class="static-products">
+        <h2>More Products</h2>
+        <div class="product-grid">
+            <!-- Repeat for 9 products -->
+            <div class="product-card">
+                <img src="images/skate2.jpg" alt="Skateboard 2">
+                <h3>Skateboard Pro 2</h3>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Add more cards (total 9) -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
