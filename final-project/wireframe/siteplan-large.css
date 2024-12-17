@@ -1,0 +1,75 @@
+/* Media queries para pantallas de celular */
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p, ul li {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .site-name, .purpose, .scenarios, .colors, .typography {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+/* Media queries para pantallas más pequeñas (menos de 480px) */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    p, ul li {
+        font-size: 0.8rem;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    ul {
+        gap: 10px;
+    }
+
+    .site-name, .purpose, .scenarios, .colors, .typography {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 8px;
+    }
+}

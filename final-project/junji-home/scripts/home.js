@@ -1,11 +1,11 @@
-// Hamburguer Menu //
-
+// Script para mostrar/ocultar el menú hamburguesa
 const menuToggle = document.getElementById('menu-toggle');
-const navLinks = document.getElementById('nav-links');
-
+const navigation = document.querySelector('.navigation');
+    
 menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
+  navigation.classList.toggle('open');
+  menuToggle.classList.toggle('open');
+});
 
 /*carousel*/
 

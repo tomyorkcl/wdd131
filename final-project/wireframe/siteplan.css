@@ -49,13 +49,28 @@ p {
 }
 
 ul {
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    justify-content: center;
     list-style-type: disc;
     padding-left: 20px;
 }
 
+a:hover {
+    color: var(--secondary-color);
+}
+
 ul li {
+    justify-content: center;
     font-size: 1rem;
     margin-bottom: 5px;
+    list-style:none
+}
+
+a {
+    text-decoration: none;
+    color: var(--neutral-color);
 }
 
 .site-name, .purpose, .scenarios, .colors, .typography {
@@ -77,3 +92,4 @@ footer p {
     font-size: 1rem;
     margin: 0;
 }
+
