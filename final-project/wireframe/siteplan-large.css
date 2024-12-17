@@ -1,12 +1,12 @@
-/* Media queries para pantallas de celular */
+
 
 @media screen and (max-width: 768px) {
 
     :root {
-        --primary-color: #1e4b8f;  /* Azul */
-        --secondary-color: black;  /* Negro */
-        --tertiary-color: white;   /* Blanco */
-        --neutral-color: #f9f9f9;  /* Gris Claro */
+        --primary-color: #1e4b8f;  
+        --secondary-color: black;  
+        --tertiary-color: white;   
+        --neutral-color: #f9f9f9;  
     }
     
     h1 {
@@ -49,7 +49,7 @@
     iframe {
         width: 450px;
         height: 300px;
-        border: none; /* Remove any borders */
+        border: none; 
     }
 
     .nav-links {

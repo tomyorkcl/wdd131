@@ -1,4 +1,4 @@
-// Script para mostrar/ocultar el menú hamburguesa
+
 const menuToggle = document.getElementById('menu-toggle');
 const navigation = document.querySelector('.navigation');
     
