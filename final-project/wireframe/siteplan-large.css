@@ -47,7 +47,8 @@
     }
 
     iframe {
-        padding: 15px;
+        width: 450px;
+        height: 300px;
         border: none; 
     }
 
