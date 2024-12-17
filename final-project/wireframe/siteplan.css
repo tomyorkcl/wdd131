@@ -96,6 +96,7 @@ footer p {
 iframe {
     width: 1200px;
     height: 500px;
+    border: none; /* Remove any borders */
 }
 
 .menu-toggle {

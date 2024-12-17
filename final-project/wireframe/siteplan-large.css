@@ -49,6 +49,7 @@
     iframe {
         width: 450px;
         height: 300px;
+        border: none; /* Remove any borders */
     }
 
     .nav-links {
