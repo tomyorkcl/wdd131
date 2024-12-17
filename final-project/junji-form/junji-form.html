@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <link rel="stylesheet" href="styles/junjiskateboard.css">
+    <script defer src="scripts/junji-form-script.js"></script>
+</head>
+<body>
+    <header>
+
+        <h1>Catalogue Form</h1>
+
+    </header>
+
+    <main>
+        <form action="junji-order.html" method="get">
+
+                        <!-- User Name -->
+            <div>
+                <label for="user-name">User Name</label>
+                <input type="text" id="user-name" name="user-name" placeholder="Enter your name">
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email">
+            </div>
+
+            <!-- Product Name -->
+            <div>
+                <label for="product-name">Product Category</label>
+                <select id="product-name" name="product-name" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                    <!-- Options populated dynamically via JavaScript -->
+                </select>
+            </div>
+
+            <!-- Written Review -->
+            <div>
+                <label for="written">How did you learn about us?</label>
+                <textarea id="written" name="written" rows="5" cols="40" placeholder="Through a friend, family, sponsors, athletes, etc"></textarea>
+            </div>
+
+
+
+            <!-- Submit Button -->
+            <div class="button">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Junji Skateboarding. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

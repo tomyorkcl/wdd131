@@ -7,25 +7,29 @@
     <meta name="author" content="Tomas Contreras">
     <meta name="description" content="Discover the best skateboards, decks, wheels, and accessories at Junji Skateboards.">
 
-    <link rel="stylesheet" href="siteplan.css">
-    <link rel="stylesheet" href="siteplan-small.css">
+    <link rel="stylesheet" href="styles/junji-skateboard.css">
+    <link rel="stylesheet" href="styles/junji-skateboard-large.css">
+    <script src="script/junji-skateboard.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
 </head>
 <body>
 <header>
   <div class="logo">
-    <img src="images/logo-skateboard.png" alt="Logo Junji Skateboarding" width="100px">
+    <img src="images/logo.png" alt="Logo Junji Skateboarding">
+  </div>
+
+  <div class="menu-toggle" id="menu-toggle">
+    &#9776; <!-- Hamburger icon -->
   </div>
 
   <nav class="navigation">
     <ul class="nav-links">
       <li><a href="#">Home</a></li>
-      <li><a href="#">Skateboards</a></li>
-      <li><a href="#">Accessories</a></li>
+      <li><a href="#">Top Skateboards</a></li>
+      <li><a href="#">Gift Form</a></li>
     </ul>
   </nav>
 </header>
@@ -33,33 +37,35 @@
 <main>
   <div class="highlight">
     <h2>TOP SKATEBOARDS</h2>
-    <div class="carousel-container">
-      <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
-      <div class="carousel">
-        <div class="product">
-          <h3>Santa Cruz Pro Deck</h3>
-          <img src="images/santa-cruz-deck.png" alt="Santa Cruz Pro Deck" class="product-image">
-          <p>$109.99</p>
-          <a href="#" class="btn">Buy</a>
-        </div>
-
-        <div class="product">
-          <h3>Element Skateboard</h3>
-          <img src="images/element-skateboard.png" alt="Element Skateboard" class="product-image">
-          <p>$129.99</p>
-          <a href="#" class="btn">Buy</a>
-        </div>
-
-        <div class="product">
-          <h3>Zero Deck</h3>
-          <img src="images/zero-deck.png" alt="Zero Deck" class="product-image">
-          <p>$99.99</p>
-          <a href="#" class="btn">Buy</a>
-        </div>
-        
-        <!-- Agregar más productos aquí -->
+    <div class="products">
+      <div class="product">
+        <h3>Santa Cruz Pro Deck</h3>
+        <img src="images/stacruz.webp" alt="Santa Cruz Pro Deck" class="product-image">
+        <p>$109.99</p>
+        <a href="#" class="btn">Buy</a>
       </div>
-      <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+
+      <div class="product">
+        <h3>Element Skateboard</h3>
+        <img src="images/skate.webp" alt="Element Skateboard" class="product-image">
+        <p>$129.99</p>
+        <a href="#" class="btn">Buy</a>
+      </div>
+
+      <div class="product">
+        <h3>Zero Deck</h3>
+        <img src="images/skate2.webp" alt="Zero Deck" class="product-image">
+        <p>$99.99</p>
+        <a href="#" class="btn">Buy</a>
+      </div>
+
+      <div class="product">
+        <h3>Zero Deck</h3>
+        <img src="images/skate3.webp" alt="Zero Deck" class="product-image">
+        <p>$99.99</p>
+        <a href="#" class="btn">Buy</a>
+      </div>
+
     </div>
   </div>
 
@@ -72,7 +78,8 @@
 <footer>
   <h3>©2024 🗿 Tomas Contreras 🗿 Chile</h3>
   <p>Last modification: <span id="last-modified"></span></p>
-  <script src="siteplan.js" defer></script>
+
+  <script src="script/junji-skateboard.js" defer></script>
 </footer>
 </body>
 </html>
