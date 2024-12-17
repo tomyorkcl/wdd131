@@ -58,7 +58,7 @@ ul {
 }
 
 a:hover {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 ul li {
@@ -70,7 +70,7 @@ ul li {
 
 a {
     text-decoration: none;
-    color: var(--neutral-color);
+    color: var(--secondary-color);
 }
 
 .site-name, .purpose, .scenarios, .colors, .typography {
@@ -93,3 +93,11 @@ footer p {
     margin: 0;
 }
 
+iframe {
+    width: 1200px;
+    height: 500px;
+}
+
+.menu-toggle {
+    display: none; 
+  }
